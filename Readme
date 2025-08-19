@@ -1,5 +1,3 @@
-**PEGASUS BLOCKLIST**
-
 **Pegasus Spyware: Anatomy, Evasion Tactics, and Protection Strategies**
 
 ---
@@ -78,19 +76,23 @@ To defend against Pegasus and similar spyware, consider the following strategies
 
 To further protect your devices, it's advisable to block known Pegasus-related domains and IP addresses. A comprehensive list has been compiled and is available in a CSV format. This list includes:
 
-* **40,000+**: Identified by Amnesty International as associated with Pegasus.
+* **1,500+ domains**: Identified by Amnesty International as associated with Pegasus.
 * **Command-and-Control (C2) servers**: Domains and IPs used by Pegasus for remote communication.
 
 You can download the list from the following GitHub repository:
 
-👉 [Download Pegasus Blocklist (CSV)](https://github.com/jjjxu/NSO_Pegasus_Blocklist)
+👉 [Download Pegasus Blocklist (CSV)](https://github.com/noapis/Pegasus---Indicators-of-Compromise/blob/e5027d3217154d1419df23b54c74ffc74a301a63/iOCs-Pegasus-Graphite-Paragon-Skynet-Emotet-Mirai.csv)
 
 **Recommendation**: Add all entries from this list to your firewall's blocklist or your system's hosts file to prevent communication with Pegasus infrastructure.
 
-**Stay Informed and Protected**
+---
+
+### 📱 Stay Informed and Protected
 
 For the latest updates on privacy and cybersecurity, join our Telegram channel:
 
 👉 [@PrivacyNotACrime](https://t.me/PrivacyNotACrime)
 
 Remember, **privacy is not a crime**.
+
+---
