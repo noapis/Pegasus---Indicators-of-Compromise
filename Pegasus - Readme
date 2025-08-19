@@ -1,0 +1,96 @@
+**PEGASUS BLOCKLIST**
+
+---
+
+### 🕵️ What Is Pegasus?
+
+**Pegasus** is a sophisticated spyware developed by the NSO Group, primarily used for surveillance by governments worldwide. It targets both iOS and Android devices, enabling operators to remotely access and control various functions of the device, including:
+
+* 📞 **Call interception**
+* 📧 **Message reading**
+* 🎥 **Camera and microphone activation**
+* 📍 **Location tracking**
+* 🔐 **Data exfiltration**
+
+The spyware is designed to operate covertly, often without the user's knowledge or consent.
+
+---
+
+### 🧠 How It Works
+
+Pegasus employs multiple methods to infiltrate and maintain control over a device:
+
+* **Zero-click exploits**: These vulnerabilities allow Pegasus to infect a device without any user interaction, often through apps like iMessage or Apple Music.
+* **Two-stage exploit chains**: Pegasus may use a combination of vulnerabilities to gain access, such as exploiting HomeKit followed by iMessage.
+* **Modular architecture**: Once installed, Pegasus can download additional modules to extend its capabilities, including keylogging, geolocation tracking, and remote execution.
+
+---
+
+### 🛡️ Evasion Techniques
+
+To avoid detection and analysis, Pegasus utilizes several advanced evasion tactics:
+
+* **Minimal logging**: The spyware generates few forensic artifacts, making it challenging to detect through traditional logging mechanisms.
+* **Ephemeral command-and-control servers**: Pegasus frequently changes its communication endpoints, often using rotating domains and IP addresses.
+* **Self-destruction mechanisms**: If Pegasus detects the risk of exposure, it can delete itself to eliminate traces of its presence.
+
+---
+
+### 🧩 MITRE ATT\&CK Techniques
+
+Pegasus leverages various techniques outlined in the MITRE ATT\&CK framework:
+
+* **Initial Access**: Exploitation of public-facing applications and spearphishing via messaging.
+* **Execution**: Use of command and scripting interpreters and exploitation for execution.
+* **Persistence**: Boot or logon autostart execution and registry run keys/startup folder.
+* **Defense Evasion**: Indicator removal on host, obfuscated files or information, and timestomp.
+* **Collection**: Input capture (keylogging), audio capture, video capture, and screen capture.
+* **Command and Control**: Encrypted channel and custom command and control protocol.
+
+---
+
+### 💻 RDP Module for Windows
+
+A notable feature of Pegasus is its **RDP (Remote Desktop Protocol) module** for Windows systems. This module allows operators to remotely control Windows machines, facilitating:
+
+* **Full desktop access**: Operators can interact with the system as if they were physically present.
+* **Command execution**: The ability to run commands and scripts remotely.
+* **Data exfiltration**: Access to files and data stored on the system.
+
+This capability underscores the versatility of Pegasus in targeting both mobile and desktop platforms.
+
+---
+
+### 🔐 Protection Measures
+
+To defend against Pegasus and similar spyware, consider the following strategies:
+
+* **Use a robust firewall**: Implementing a strong firewall can help block unauthorized access and communication with malicious servers.
+* **Regular updates**: Ensure that operating systems and applications are kept up to date to patch known vulnerabilities.
+* **Network monitoring**: Employ tools to monitor network traffic for unusual activity that may indicate an infection.
+* **User education**: Train users to recognize phishing attempts and avoid clicking on suspicious links or attachments.
+
+---
+
+### 📂 Blocking Pegasus Domains and IPs
+
+To further protect your devices, it's advisable to block known Pegasus-related domains and IP addresses. A comprehensive list has been compiled and is available in a CSV format. This list includes:
+
+* **Over 40,000 domains**: Identified by Amnesty International as associated with Pegasus.
+* **Command-and-Control (C2) servers**: Domains and IPs used by Pegasus for remote communication.
+
+You can download the list from the following GitHub repository:
+
+👉 [Download Pegasus Blocklist (CSV)](https://github.com/noapis/Pegasus---Indicators-of-Compromise/blob/e5027d3217154d1419df23b54c74ffc74a301a63/iOCs-Pegasus-Graphite-Paragon-Skynet-Emotet-Mirai.csv)
+
+**Recommendation**: Add all entries from this list to your firewall's blocklist or your system's hosts file to prevent communication with Pegasus infrastructure.
+
+---
+
+### 📱 Stay Informed and Protected
+
+For the latest updates on privacy and cybersecurity, join our Telegram channel:
+
+👉 [@PrivacyNotACrime](https://t.me/PrivacyNotACrime)
+
+Remember, **privacy is not a crime**.
