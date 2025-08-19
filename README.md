@@ -1,3 +1,5 @@
+**PEGASUS BLOCKLIST**
+
 **Pegasus Spyware: Anatomy, Evasion Tactics, and Protection Strategies**
 
 ---
